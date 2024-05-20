@@ -2,7 +2,7 @@ let modal = document.querySelector(".modal_dialog")
 let modal_close = document.querySelector(".close_btn")
 let menu = document.querySelector(".menu")
 let container = document.querySelector(".container")
-let header = document.querySelector(".header")
+let header = document.querySelector(".header_box")
 let body = document.body
 
 menu.onclick = () => {
