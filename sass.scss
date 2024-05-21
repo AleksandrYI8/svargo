@@ -16,12 +16,15 @@ body{
   width: 100%;
   
   margin: 0 auto;
-  background-color: rgb(201, 201, 201);
 
   
-  h1{
-    opacity: 0;
-  }
+ video{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+ }
 
 }
 
@@ -31,21 +34,29 @@ body{
 .line_header{
   width: 100%;
   height: 10px;
-  background-color: rgb(116, 0, 0);
+  background-color: rgb(163, 0, 0);
 }
 
 
-
+.header_box{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 1;
+}
 
 .header{
+  
+
   width: 100%;
   height: 75px;
   display: flex;
 align-items: start;
-  background-color: rgb(255, 255, 255);
+background:rgb(235, 235, 235, .8);
+
   justify-content: space-between;
   padding: 0px 20px;
-  opacity: .9;
 
   .logo{
     img{
@@ -133,14 +144,19 @@ align-items: start;
   .modal_header_box{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    
   }
+
+
 
   .modal_header_line{
     height: 10px;
-    background-color: rgb(116, 0, 0);
+    background-color: rgb(163, 0, 0);
+
     width: 100%;
   }
+
+ 
 
   position: absolute;
   right: -100%;
@@ -187,9 +203,11 @@ align-items: start;
 
   .modal_hider{
     display: flex;
-    height: 50px;
+    height: 75px;
     justify-content: space-between;
     padding: 15px 10px;
+    background:rgb(235, 235, 235, .8);
+
     
 
 
@@ -228,4 +246,45 @@ align-items: start;
 
 .overflow{
   overflow: hidden;
+}
+
+
+.first_sec{
+
+  .h1{
+    background-color: rgb(163, 0, 0, .5);
+
+    margin-top: 10%;
+    margin-bottom: 20px;
+
+
+    h1{
+      color: white;
+    font-weight: 400;
+      width: 100%;
+      text-align: center;
+      padding: 50px;
+      
+      font-size: 85px;
+    }
+
+  }
+
+  .connect{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    a{
+      text-decoration: 0;
+      color: white;
+      padding: 20px 25px;
+      font-size: 30px;
+      background-color: rgb(163, 0, 0,.8);
+      border-radius: 50px;
+
+    }
+  }
+  
+ 
 }
