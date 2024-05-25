@@ -8,11 +8,22 @@ body{
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   
+}
 
+@keyframes plavno {
+  0%{
+    scale: 0;
+    transition: .5s;
+  }
 
+  100%{
+    scale: 1;
+    transition: .5s;
+  }
 }
 
 .container{
+  transition: .5s;
   width: 100%;
   
   margin: 0 auto;
@@ -256,6 +267,8 @@ background:rgb(235, 235, 235, .8);
 
     margin-top: 10%;
     margin-bottom: 20px;
+animation: plavno .4s linear;
+
 
 
     h1{
@@ -266,6 +279,8 @@ background:rgb(235, 235, 235, .8);
       padding: 50px;
       
       font-size: 85px;
+animation: plavno .4s linear;
+
     }
 
   }
@@ -285,6 +300,8 @@ background:rgb(235, 235, 235, .8);
       background-color: rgb(163, 0, 0,.8);
       border-radius: 50px;
       transition: .3s;
+animation: plavno .4s linear;
+
     }
 
     a:hover{
