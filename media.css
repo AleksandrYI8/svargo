@@ -1,0 +1,91 @@
+ @media(max-width:576px){
+.header .logo img {
+    width: 120px;
+    padding-top: 10px;
+
+}
+
+.header{
+    width: 103%;
+}
+
+.line_header{
+    width: 103%;
+    height: 5px;
+}
+
+.header .right ul li .email{
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.header .right .menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal_dialog .modal_hider .logo img{
+    width: 100px;
+}
+
+.modal_dialog .modal_header_line{
+    height: 5px;
+}
+
+.modal_dialog{
+    width: 60%;
+}
+
+.modal_dialog .info_modal{
+    margin-bottom: 95%;
+}
+
+.box .item .left{
+    width: 200px;
+    height: 170px;
+    margin-left: 70px;
+}
+
+.box .item .right h1{
+    font-size: 25px;
+}
+
+.box .item{
+    gap: 20px;
+}
+
+.footer a{
+    font-size: 25px;
+}
+
+.footer .right a img{
+    width: 20px;
+}
+
+.footer .left{
+    margin-left: 5%;
+}
+
+.footer .right .main_a {
+    margin-right: 0px;
+}
+
+.footer .right{
+    gap: 20px;
+}
+
+.footer .right a img{
+    width: 35px;
+}
+
+.footer{
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.footer .right .main_a {
+    margin-left: 10px;
+}
+
+} 
