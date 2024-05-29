@@ -89,3 +89,52 @@
 }
 
 } 
+
+
+
+@media(min-width:326px) {
+
+  
+
+    .modal_dialog{
+        display: none;
+    }
+
+    .header .logo img{
+        width: 100px;
+    }
+
+    .header .right ul li .email{
+        font-size: 20px;
+        display: block;
+    }
+
+    .header .right ul li a{
+        display: none;
+    }
+    
+
+    .footer .right a {
+        display: none;
+    }
+
+    .footer .right .main_a{
+        display: block;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .header{
+        width: 143%;
+    }
+
+    .line_header{
+        width: 143%;
+    }
+
+    .header .right .menu {
+        right: -120px;
+    }
+}
