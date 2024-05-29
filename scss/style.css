@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes plavno {
+  0% {
+    scale: 0;
+    transition: 0.5s;
+  }
+  100% {
+    scale: 1;
+    transition: 0.5s;
+  }
+}
+.container {
+  transition: 0.5s;
+  width: 100%;
+  margin: 0 auto;
+}
+.container video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.line_header {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(163, 0, 0);
+}
+
+.header_box {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 1;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: start;
+  background: rgba(235, 235, 235, 0.9);
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.header .logo img {
+  width: 160px;
+}
+.header .info a {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+.header .info a img {
+  width: 30px;
+}
+.header .menu {
+  padding-top: 10px;
+}
+.header .menu button {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  border: 0;
+  background-color: none;
+  background: none;
+}
+.header .right {
+  display: flex;
+  /* .info{
+    padding-top: 50px;
+    margin-right: 20px;
+    display: flex;  
+    gap: 20px;
+  } */
+}
+.header .right .menu {
+  display: flex;
+  margin-left: 150px;
+}
+.header .right ul {
+  list-style-type: none;
+  display: flex;
+  gap: 450px;
+  padding-top: 25px;
+}
+.header .right ul li .email {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: black;
+  opacity: 0.9;
+  font-size: 29px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  transition: 0.3s;
+}
+.header .right ul li a {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  font-family: "EB Garamond", serif;
+  color: black;
+  opacity: 0.9;
+  font-size: 29px;
+  transition: 0.3s;
+}
+.header .right ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.modal_dialog {
+  position: absolute;
+  right: -100%;
+  width: 30%;
+  height: 100vh;
+  background-color: rgb(248, 248, 248);
+  z-index: 1;
+  transition: 0.3s;
+}
+.modal_dialog .modal_header_box {
+  display: flex;
+  flex-direction: column;
+}
+.modal_dialog .modal_header_line {
+  height: 10px;
+  background-color: rgb(163, 0, 0);
+  width: 100%;
+}
+.modal_dialog .line {
+  width: 90%;
+  height: 2px;
+  background-color: black;
+  margin-left: 5%;
+  border-radius: 50px;
+  opacity: 0.6;
+}
+.modal_dialog .info_modal {
+  margin-top: 120px;
+  margin-left: 25px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 90%;
+}
+.modal_dialog .info_modal li a {
+  font-size: 30px;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: black;
+  opacity: 0.7;
+}
+.modal_dialog .info_modal li a:hover {
+  opacity: 1;
+}
+.modal_dialog .modal_hider {
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  padding: 15px 10px;
+  background: rgba(235, 235, 235, 0.8);
+}
+.modal_dialog .modal_hider .logo img {
+  width: 130px;
+  margin-top: -5px;
+}
+.modal_dialog .modal_hider .close_btn button {
+  border: 0;
+  background: none;
+}
+.modal_dialog .modal_hider .close_btn button img {
+  width: 30px;
+}
+
+.hide {
+  position: absolute;
+  right: -100%;
+}
+
+.show {
+  position: absolute;
+  right: 0px;
+}
+
+.opacity {
+  opacity: 0.2;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.first_sec .h1 {
+  background-color: rgba(163, 0, 0, 0.5);
+  margin-top: 10%;
+  margin-bottom: 20px;
+  animation: plavno 0.4s linear;
+}
+.first_sec .h1 h1 {
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  font-size: 85px;
+  animation: plavno 0.4s linear;
+}
+.first_sec .connect {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.first_sec .connect a {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: white;
+  padding: 20px 25px;
+  font-size: 30px;
+  background-color: rgba(163, 0, 0, 0.8);
+  border-radius: 50px;
+  transition: 0.3s;
+  animation: plavno 0.4s linear;
+}
+.first_sec .connect a:hover {
+  scale: 1.02;
+  box-shadow: 0px 0px 20px 2px rgba(163, 0, 0, 0.8);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+}
+.box hr {
+  width: 70%;
+  margin-left: 15%;
+}
+.box .item {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.box .item .left {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+}
+.box .item .right h1 {
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.footer_box {
+  position: sticky;
+  bottom: 0px;
+}
+.footer_box .line {
+  height: 10px;
+  width: 100%;
+  background-color: rgb(163, 0, 0);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: aquamarine;
+  gap: 20px;
+  padding: 10px;
+  background: rgba(235, 235, 235, 0.9);
+}
+.footer a {
+  color: black;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  font-size: 40px;
+  font-style: italic;
+}
+.footer a:hover {
+  color: blue;
+  text-decoration-line: underline;
+  font-style: italic;
+}
+.footer p {
+  font-size: 40px;
+  font-style: italic;
+}
+.footer .left {
+  margin-left: 30%;
+}
+.footer .right {
+  display: flex;
+  gap: 30px;
+}
+.footer .right .main_a {
+  margin-right: 200px;
+}
+.footer .right a img {
+  padding-top: 5px;
+  width: 40px;
+  transition: 0.2s;
+}
+.footer .right a img:hover {
+  scale: 1.1;
+}/*# sourceMappingURL=style.css.map */
