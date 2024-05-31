@@ -201,6 +201,7 @@ body {
 
 .overflow {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .first_sec .h1 {
