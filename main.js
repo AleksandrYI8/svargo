@@ -21,7 +21,7 @@ menu.onclick = () => {
   
   let rect = header_box.offsetTop 
   
-  modal.style.top = rect + "px"
+  modal.style.top = rect + "px" 
   body.classList.add("overflow")
   container.classList.add("opacity")
   header.classList.add("opacity")

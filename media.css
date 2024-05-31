@@ -16,7 +16,6 @@
 
 .header .right ul li .email{
     font-size: 25px;
-    margin-left: 40px;
 }
 
 .header .right .menu{
@@ -89,25 +88,46 @@
 }
 
 } 
+ 
 
 
+@media(max-width:326px) {
 
-@media(min-width:326px) {
 
-  
+/*   .show{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
 
     .modal_dialog{
         display: none;
+    } */
+
+    .header{
+        justify-content: left;
+        padding: 0px 5px;
+
     }
 
     .header .logo img{
         width: 80px;
+        margin-right: 20px;
     }
+
+    .header .right ul{
+        gap: 0px;
+    }
+
+    /* .header .right ul li{
+    }  */
 
     .header .right ul li .email{
         font-size: 16px;
         display: block;
-        margin-left: 15px;
+        text-align: center;
     }
 
     .header .menu button img{
@@ -118,24 +138,46 @@
         display: none;
     }
 
-    .box .item .left{
+/* 
+    .first_sec .box .item .right{
+        padding-right: 10px;
+    } */
+
+    .first_sec{
+        margin-bottom: 100px;
+    }
+
+   .first_sec .box .item .left{
         margin-left: 20px;
     }
 
-    .box .item .right h1{
+    .first_sec .box .item .right h1{
         font-size: 15px;
+        padding-top: 15px;
     }
 
-    .box .item .left{
-        height: 150px;
+    .first_sec .box .item .left{
+        height: 120px;
+        width: 130px;
     }
 
-    .box{
+    .first_sec  .box{
         padding-top: 40px;
         gap: 25px;
         margin-bottom: 20px;
     }
+
+    .first_sec .box .item{
+        gap: 15px;
+    }
     
+
+    .footer{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
 
     .footer_box .line{
         height: 5px;
@@ -188,4 +230,122 @@
             gap: 5px;
             height: 30px;
         }
-}
+
+
+        .second_sec{
+            margin-bottom: 100px;
+        }
+
+        .second_sec h1{
+            font-size: 25px;
+        }
+
+        .second_sec .box .item{
+            width: 130px;
+            height: 120px;
+            margin-bottom: 4%;
+        }
+
+        .second_sec .box {
+            width: 100%;
+            gap: 4%;
+            margin-left: 0%;
+        }
+
+        #seven{
+            display: none;
+        }
+
+        #nine{
+            display: none;
+        }
+
+        #eight{
+            display: none;
+        }
+
+        .third_sec h1{
+            font-size: 25px;
+        }
+
+        .third_sec .box {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .third_sec{
+            margin-bottom: 50px;
+        }
+
+      .third_sec  .box .item .left{
+            width: 200px;
+            height: 85px;
+            margin-left: 0px;
+            padding: 10px;
+        }
+
+      .third_sec .box .item .right{
+        width: 80px;
+        height: 65px;
+      }  
+
+      .third_sec .box .item{
+        width: 80%;
+        height: 67px;
+        
+      }
+
+      .third_sec  .box .item .left p{
+        font-size: 13px;
+      }
+
+
+      .fourth_sec h1{
+        font-size: 25px;
+      }
+
+      .fourth_sec .box {
+        width: 90%;
+        margin-left: 5%;
+      }
+      .fourth_sec .box .right p{
+        font-size: 15px;
+      }
+
+      .fourth_sec .box .left{
+        width: 45%;
+        height: 160px;
+      }
+
+      .fourth_sec .box img{
+        width: 40%;
+      }
+
+      .fourth_sec{
+        margin-bottom: 30px;
+      } 
+
+      .modal_dialog .modal_hider .logo img{
+        width: 70px;
+      }
+
+      .modal_dialog .modal_hider .close_btn button img{
+        width: 25px;
+        padding: 2px;
+      }
+
+      .modal_dialog .modal_hider{
+        height: 50px;
+        padding: 10px 5px;
+      } 
+
+      .modal_dialog .info_modal li a{
+        font-size: 16px;
+      }
+
+      .modal_dialog .info_modal{
+        margin-top: 50px;
+        gap: 10px;
+      }
+
+    }
