@@ -168,11 +168,10 @@ background:rgb(235, 235, 235, .9);
     width: 100%;
   }
 
- 
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 30%;
   height: 100vh;
   background-color: rgb(248, 248, 248);
@@ -244,15 +243,15 @@ background:rgb(235, 235, 235, .9);
 }
 
 .hide{
-display: none;
-/*   position: absolute;
-  right: -100%; */
+  display: none;
+   position: absolute;
+  right: -100%;
 }
 
 .show{
-display: block;
-/*   position: absolute;
-  right: 0px; */
+  display: block;
+   position: absolute;
+  right: 0px; 
 }
 
 .opacity{
@@ -366,10 +365,14 @@ animation: plavno .4s linear;
 .footer_box{
   position: sticky;
   bottom: 0px;
+  left: 0;
+  right: 0;
 
   .line{
     height: 10px;
     width: 100%;
+    position: absolute;
+    bottom: 70px;
     background-color: rgb(163, 0, 0);
   }
   
@@ -511,14 +514,15 @@ background:rgb(235, 235, 235, .9);
   }
 
   .box {
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
   }
   
   .box img {
     float: left;
-    margin-right: 10px;
-    max-width: 35%;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    max-width: 25%;
     height: auto;
   }
   
