@@ -572,6 +572,10 @@
   .fourth_sec .box img{
     width: 40%;
   }
+
+  .header .right{
+    margin-left: 15%;
+}
 } 
  
 
