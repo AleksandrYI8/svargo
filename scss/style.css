@@ -74,8 +74,9 @@ body {
   background-color: none;
   background: none;
 }
-.header .right {
+.header .midle {
   display: flex;
+  justify-content: center;
   /* .info{
     padding-top: 50px;
     margin-right: 20px;
@@ -83,17 +84,16 @@ body {
     gap: 20px;
   } */
 }
-.header .right .menu {
+.header .midle .menu {
   display: flex;
-  margin-left: 150px;
 }
-.header .right ul {
+.header .midle ul {
   list-style-type: none;
   display: flex;
   gap: 450px;
   padding-top: 25px;
 }
-.header .right ul li .email {
+.header .midle ul li .email {
   -webkit-text-decoration: 0;
           text-decoration: 0;
   color: black;
@@ -103,7 +103,7 @@ body {
   font-style: italic;
   transition: 0.3s;
 }
-.header .right ul li a {
+.header .midle ul li a {
   -webkit-text-decoration: 0;
           text-decoration: 0;
   font-family: "EB Garamond", serif;
@@ -112,7 +112,7 @@ body {
   font-size: 29px;
   transition: 0.3s;
 }
-.header .right ul li a:hover {
+.header .midle ul li a:hover {
   text-decoration: underline;
   color: blue;
 }

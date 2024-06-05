@@ -96,8 +96,9 @@ background:rgb(235, 235, 235, .9);
     }
   }
 
-  .right{
+  .midle{
     display: flex;
+    justify-content: center;
     /* .info{
       padding-top: 50px;
       margin-right: 20px;
@@ -107,7 +108,6 @@ background:rgb(235, 235, 235, .9);
 
     .menu{
       display: flex;
-      margin-left: 150px;
     }
 
     ul{
